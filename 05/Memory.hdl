@@ -27,10 +27,6 @@ CHIP Memory {
     OUT out[16];
 
     PARTS:
-    //Notes:
-    //loadM = load for memory
-    //loadS = load for screen
-
     // Put your code here:
     Not(in=address[14], out=notA14);
     And(a=notA14, b=load, out=loadM); //If (address 14 == 0 -> notA14 == 1) and load == 1, loadS == 1. else loadM == 0
